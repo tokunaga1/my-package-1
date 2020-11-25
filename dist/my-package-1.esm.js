@@ -8,7 +8,8 @@ var script = {
   },
 
   props: {
-    value: Array
+    value: Array,
+    group: String
   },
 
   computed: {
@@ -162,7 +163,7 @@ var __vue_render__ = function() {
   return _c(
     "draggable",
     {
-      attrs: { tag: "ul", animation: "200" },
+      attrs: { tag: "ul", animation: "200", group: _vm.group },
       model: {
         value: _vm.list,
         callback: function($$v) {
@@ -183,11 +184,11 @@ __vue_render__._withStripped = true;
   /* style */
   var __vue_inject_styles__ = function (inject) {
     if (!inject) { return }
-    inject("data-v-05524cb2_0", { source: "\n\n/*# sourceMappingURL=MyPackage1.vue.map */", map: {"version":3,"sources":["MyPackage1.vue"],"names":[],"mappings":";;AAEA,yCAAyC","file":"MyPackage1.vue"}, media: undefined });
+    inject("data-v-f7da0696_0", { source: "\n\n/*# sourceMappingURL=MyPackage1.vue.map */", map: {"version":3,"sources":["MyPackage1.vue"],"names":[],"mappings":";;AAEA,yCAAyC","file":"MyPackage1.vue"}, media: undefined });
 
   };
   /* scoped */
-  var __vue_scope_id__ = "data-v-05524cb2";
+  var __vue_scope_id__ = "data-v-f7da0696";
   /* module identifier */
   var __vue_module_identifier__ = undefined;
   /* functional template */
