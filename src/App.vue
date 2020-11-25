@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <MyPackage1 v-model="bs" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import MyPackage1 from '@/components/MyPackage1/MyPackage1.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',
+
+    components: {
+      MyPackage1
+    },
+
+    data: () => ({
+      items: [...new Array(5)].map((b, i) => `b${i}`)
+    }),
+
+    computed: {
+      bs: {
+        get () {
+          return this.items;
+        },
+        set (bs) {
+          this.items = bs;
+        }
+      }
+    }
   }
-}
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  li {
+    cursor: grab;
+  }
 </style>

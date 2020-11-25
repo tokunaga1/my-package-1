@@ -8,6 +8,17 @@ export default {
   },
 
   props: {
-    list: Array
+    value: Array
   },
+
+  computed: {
+    list: {
+      get () {
+        return this.value;
+      },
+      set (list) {
+        this.$emit('input', list);
+      }
+    }
+  }
 }

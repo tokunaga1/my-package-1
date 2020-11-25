@@ -1,5 +1,5 @@
 <template>
-  <draggable tag="ul" v-model="list">
+  <draggable tag="ul" v-model="list" animation="200">
     <li v-for="(item, i) in list" :key="i">
       {{ item }}
     </li>
