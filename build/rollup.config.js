@@ -16,4 +16,7 @@ export default {
     }),
     buble(), // Transpile to ES5
   ],
+  external: [
+    'vuedraggable'
+  ]
 };
