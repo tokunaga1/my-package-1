@@ -8,7 +8,8 @@ export default {
   },
 
   props: {
-    value: Array
+    value: Array,
+    group: String
   },
 
   computed: {
