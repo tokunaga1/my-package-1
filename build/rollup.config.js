@@ -7,6 +7,9 @@ export default {
   output: {
     name: 'MyPackage1',
     exports: 'named',
+    globals: {
+      vuedraggable: 'draggable'
+    }
   },
   plugins: [
     commonjs(),
